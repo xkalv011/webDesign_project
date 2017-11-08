@@ -23,3 +23,14 @@ $(document).ready(function () {
         return false;
     });
 });
+
+$(function() {
+let navLinks = document.querySelector('.navigation_mobile');
+let narrowLinks = document.querySelector('.navigation_mobile_link');
+
+navLinks.addEventListener('click', toggle);
+
+function toggle() {
+    narrowLinks.classList.toggle('hidden');
+};
+});

@@ -20,58 +20,65 @@
     <?php include 'php/funkce.php'; ?>
 
     <body>
-    <div class="nav">
+    <nav>
         <div class="container">
             <div class="navigation">
-                <ul>
-                    <li><a href="#" id="scrollup">Domů</a></li>
-                    <li><a href="#onas">O nás</a></li>
-                    <li><a href="#naseprace">Naše práce</a></li>
-                    <li><a href="#kontakt">Kontakt</a></li>
-                </ul>
+                    <a href="#" id="scrollup">Domů</a>
+                    <a href="#onas">O nás</a>
+                    <a href="#naseprace">Naše práce</a>
+                    <a href="#kontakt">Kontakt</a>
+            </div>
+
+            <div class="navigation_mobile">
+                <i class="fa fa-bars fa-2x"></i>
+                <div class="navigation_mobile_link hidden">
+                    <a href="#" id="scrollup">Domů</a>
+                    <a href="#onas">O nás</a>
+                    <a href="#naseprace">Naše práce</a>
+                    <a href="#kontakt">Kontakt</a>
+                </div>
             </div>
         </div><!--Container-->
-    </div><!--Nav-->
+    </nav>
 
-    <div class="header">
+    <header>
         <div class="container">
             <div class="header_text">
-                <div class="header_my_jsme"><span>My jsme</span></div>
-                <div class="header_pod_nazev">děti Arnolda Schwarzeneggra</div>
-                <div class="line"></div>
+                <div class="header_my_jsme">My jsme děti</div>
+                <div class="header_pod_nazev">Arnolda Schwarzeneggra</div>
             </div>
         </div><!--Container-->
-    </div><!--Header-->
+    </header>
 
 
-    <div class="content">
-        <div class="white_background">
+    <main>
+        <section id="onas">
             <div class="container">
-                <div class="content_text">
+                <div class="content">
 
-                    <h1>O nás<span id="onas"></span></h1>
+                    <h1>O nás</h1>
                     <p>Tato webová prezentace je vypracována jako <b><u>studentský projekt</u></b> pod hlavičkou České Zemědělské Univerzity, v rámci předmětu webový design. Na této práci se podíleli dva studenti a kamarádi. Tímto bychom chtěli poděkovat naším rodinám za psychickou podporu a zázemí pro vypracování projektu, dále naše dík patří škole za motivaci a možnosti na tomto projektu pracovat. V poslední řadě děkujeme našemu učiteli za odborné rady a pomoc při práci. <h2>Děkujeme</h2> </p>
                     <p>Suspendisse orci libero, lacinia quis auctor nec, suscipit sed lorem. Praesent eu erat nec mauris viverra malesuada dictum eget est. Suspendisse sollicitudin aliquet ultricies. Maecenas scelerisque arcu ac risus fringilla mattis. Nunc purus felis, egestas nec est iaculis, euismod gravida dolor. Praesent et felis eget lorem rutrum mollis. In nisl lacus, pharetra ac pulvinar sed, euismod eu risus. Cras ut vehicula ipsum. Sed tincidunt varius ultricies. Donec sed dignissim neque. Morbi eget urna enim. Proin vehicula non enim et tincidunt. Ut rutrum auctor nisl, non pharetra elit maximus id. Vivamus dignissim, mi sit amet porttitor luctus, eros dolor pellentesque ligula, ac tempor quam sapien varius ligula.</p>
                 </div>
             </div><!--Container-->
-        </div>
+        </section>
 
-        <div class="black_background">
+        <section id="naseprace">
             <div class="container">
-                <div class="content_text">
-                    <h1>Naše práce<span id="naseprace"></span></h1>
+                <div class="content">
+                    <h1>Naše práce</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper tempor consectetur. Sed volutpat dapibus mi, auctor tempor nulla blandit eget. Suspendisse quis maximus mauris. Ut id felis ex. Donec nec consequat velit. Ut nulla lorem, congue sit amet turpis et, consequat dictum leo. Fusce vitae finibus odio. Sed tellus tortor, sodales in sapien et, volutpat vestibulum dolor. Aliquam et dictum risus. In vel est vel elit consectetur venenatis eu ac quam. Duis ut laoreet lectus. Fusce vitae metus et nulla lacinia vulputate a id orci. Fusce nec mi vestibulum nulla imperdiet efficitur mattis in felis. Quisque nec pellentesque enim, ac vehicula sapien.
 
                         Donec ligula nisi, fermentum fermentum volutpat dictum, gravida non ante. Quisque dictum elementum vestibulum. Suspendisse et nulla id diam ultricies gravida. Cras facilisis elit vehicula rutrum efficitur. Sed congue gravida eros sit amet euismod. Etiam bibendum eleifend urna vel pharetra. Vivamus vel libero semper, luctus ante sit amet, blandit nisl. Phasellus et lacinia nibh. Donec aliquet nisi quis neque sollicitudin ultrices. Phasellus porttitor, elit ullamcorper pellentesque convallis, sapien orci ornare neque, nec rhoncus est arcu vel purus. Donec sed risus in nisi efficitur mattis.</p>
 
                 </div>
             </div><!--Container-->
-        </div><!--nase_prace-->
+        </section><!--nase_prace-->
 
-        <div class="white_background">
+        <section id="kontakt">
             <div class="container">
-                <div class="content_text">
-                    <h1><span id="kontakt"></span>Kontakt</h1>
+                <div class="content">
+                    <h1>Kontakt</h1>
                     <h3>Kontaktujte nás nebo nechte vzkaz!</h3>
 
                     <div class="kontakt_wrap">
@@ -90,17 +97,17 @@
                     </div>
                 </div><!--Content_text-->
             </div><!--Container-->
-        </div>
-    </div><!--Content-->
+        </section>
+    </main>
 
 
-    <div class="footer">
+    <footer>
         <div class="container">
             <div class="footer_text">
                 Společnost dvou kamarádů 2017 | studenti@czu.cz
             </div>
         </div><!--Container-->
-    </div><!--Footer-->
+    </footer>
 
     </body>
 </html>
