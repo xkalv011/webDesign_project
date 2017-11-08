@@ -250,7 +250,9 @@ button:hover, .button:hover {
     padding: 5px;
 }
 
+/*Responsive design start here*/
 @media (min-width: 480px) {
+    
     .header_my_jsme {
         font-size:1.5rem;
         text-shadow: 2px 3px 3px #000;
