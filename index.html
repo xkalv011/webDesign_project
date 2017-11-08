@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     </head>
 
-    <?php include 'php/funkce.php'; ?>
+    <?php include 'php/funkce.php'; ?><!-- Pro správnou funkci je nutné uložit soubor jako php soubor -->
 
     <body>
     <nav>
@@ -97,7 +97,7 @@
                             <i class="fa fa-phone fa-fw"></i>Telefon: +420 777 666 888<br />
                             <i class="fa fa-envelope-o fa-fw"></i>E-mail: studenti@czu.cz<br />
                         </div>
-
+<!-- Pro funkci formuláře je nutné uložit soubor jako php soubor -->
                         <form class="kontakt_form" method="POST" action="<?php echo $_SERVER['PHP_SELF']?>">
                             <input type="text" name="name" placeholder="Jméno" required="required"/>
                             <input  type="email" name="email" placeholder="Váš email" required="required" /><br />
