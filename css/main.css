@@ -46,7 +46,7 @@ nav {
     padding: 0.8rem;
 }
 
-nav	.navigation_mobile i {
+nav	.navigation_mobile em {
     float: left;
     cursor: pointer;
     color: #dbbd8a;
