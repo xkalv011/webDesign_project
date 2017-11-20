@@ -10,9 +10,6 @@ body {
 
 .container {
     margin: 0 auto;
-    /*display: flex;
-    flex-direction:column;
-    justify-content:center;*/
 }
 
 nav {
@@ -91,12 +88,12 @@ header {
     text-align: center;
 }
 
-.header_my_jsme {
+.header_first {
     font-size:1rem;
     text-shadow: 2px 3px 3px #000;
 }
 
-.header_pod_nazev{
+.header_second{
     font-size:2rem;
     text-shadow: 4px 3px 4px #333;
     text-transform:uppercase;
@@ -122,16 +119,25 @@ section:nth-child(odd) {
     text-align:center;
 }
 
-.kontakt_wrap{
+.contact_wrap{
     display: flex;
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:space-evenly;
     text-align:left;
+
+    display: -ms-flexbox;
+    -ms-flex-direction:row;
+    -ms-flex-wrap:wrap;
+    -ms-flex-pack:center;
+}
+
+.contact_text{
+    padding:1rem;
 }
 
 .kontakt_form{
-    padding: 0.2rem;
+    padding: 1rem;
 }
 
 footer {
@@ -203,12 +209,13 @@ img{
 /* Kontaktní formulář */
 input {
     margin-bottom:10px;
-    width: 49%;
+    width: 100%;
 }
 textarea {
     height:4rem;
     margin-bottom:10px;
-    width: 100%;
+    min-width: 260px;
+    min-height: 60px;
 }
 
 input, textarea {
@@ -264,12 +271,12 @@ button:hover, .button:hover {
 /*Responsive design start here*/
 @media (min-width: 480px) {
 
-    .header_my_jsme {
+    .header_first {
         font-size:1.5rem;
         text-shadow: 2px 3px 3px #000;
     }
 
-    .header_pod_nazev{
+    .header_second{
         font-size:3rem;
         text-shadow: 4px 3px 4px #333;
         text-transform:uppercase;
@@ -292,12 +299,12 @@ button:hover, .button:hover {
     header{
         height: 600px;
     }
-    .header_my_jsme {
+    .header_first {
         font-size:2rem;
         text-shadow: 2px 3px 3px #000;
     }
 
-    .header_pod_nazev{
+    .header_second{
         font-size:4rem;
         text-shadow: 4px 3px 4px #333;
         text-transform:uppercase;
@@ -312,12 +319,12 @@ button:hover, .button:hover {
     header{
         height: 900px;
     }
-    .header_my_jsme {
+    .header_first {
         font-size:3rem;
         text-shadow: 2px 3px 3px #000;
     }
 
-    .header_pod_nazev{
+    .header_second{
         font-size:6rem;
         text-shadow: 4px 3px 4px #333;
         text-transform:uppercase;
@@ -329,12 +336,12 @@ button:hover, .button:hover {
     .container{
         width: 1280px;
     }
-    .header_my_jsme {
+    .header_first {
         font-size:3.5rem;
         text-shadow: 2px 3px 3px #000;
     }
 
-    .header_pod_nazev{
+    .header_second{
         font-size:7rem;
         text-shadow: 4px 3px 4px #333;
         text-transform:uppercase;

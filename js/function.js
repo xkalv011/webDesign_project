@@ -16,7 +16,7 @@ $(function() {
 
 $(document).ready(function () {
 
-    $('#scrollup').click(function () {
+    $('#scrollup' || '#scrollupp').click(function () {
         $("html, body").animate({
             scrollTop: 0
         }, 1000);
