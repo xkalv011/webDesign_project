@@ -24,18 +24,18 @@
     <nav>
         <div class="container">
             <div class="navigation">
-                    <a href="#" id="scrollup1">Domů</a>
-                    <a href="#onas">O nás</a>
-                    <a href="#naseprace">Naše práce</a>
-                    <a href="#kontakt">Kontakt</a>
+                    <a href="#" id="scrollup1" title="Přejít na sekci domů">Domů</a>
+                    <a href="#onas" title="Přejít na sekci o nás">O nás</a>
+                    <a href="#naseprace" title="Přejít na sekci naše práce">Naše práce</a>
+                    <a href="#kontakt" title="Přejít na sekci kontakt">Kontakt</a>
             </div>
             <div class="navigation_mobile">
                 <em class="fa fa-bars fa-2x"></em>
                 <div class="navigation_mobile_link hidden">
-                    <a href="#" id="scrollup">Domů</a>
-                    <a href="#onas">O nás</a>
-                    <a href="#naseprace">Naše práce</a>
-                    <a href="#kontakt">Kontakt</a>
+                    <a href="#" id="scrollup" title="Přejít na sekci domů">Domů</a>
+                    <a href="#onas" title="Přejít na sekci o nás">O nás</a>
+                    <a href="#naseprace" title="Přejít na sekci naše práce">Naše práce</a>
+                    <a href="#kontakt" title="Přejít na sekci kontakt">Kontakt</a>
                 </div>
             </div>
         </div><!--Container-->
@@ -98,11 +98,11 @@
 <!-- Pro funkci formuláře je nutné uložit soubor jako php soubor -->
                         <form class="kontakt_form" method="POST" action="<?php echo $_SERVER['PHP_SELF']?>">
                             <label for="name">Jméno: </label>
-                            <input id="name" type="text" name="name" title="Jméno" placeholder="Jméno" required="required"/><br />
+                            <input id="name" type="text" name="name" alt="Jméno" placeholder="Jméno" required="required"/><br />
                             <label for="email">Email: </label>
-                            <input id="email" type="email" name="email" title="Váš email" placeholder="Váš email" required="required" /><br />
+                            <input id="email" type="email" name="email" alt="Váš email" placeholder="Váš email" required="required" /><br />
                             <textarea name="message" title="Zpráva" placeholder="Zpráva" required="required"></textarea><br />
-                            <button name="submit" type="submit">Odeslat</button><?php echo $result; ?>
+                            <button title="Tlačítko odeslat" name="submit" type="submit">Odeslat</button><?php echo $result; ?>
                         </form>
                     </div>
                 </div><!--Content_text-->
